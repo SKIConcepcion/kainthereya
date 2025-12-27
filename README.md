@@ -1,7 +1,7 @@
 # KainThereYa 🌷
 
 ### Project Description
-- A personal website project designed to serve as a local food finder and rating hub focusing on karinderya and paresan.
+- A personal website project designed to serve as a local food finder and rating hub focusing on Karinderya and Paresan.
 - This project serves as a personal project for my practice.
 
 ### Tech Stack
