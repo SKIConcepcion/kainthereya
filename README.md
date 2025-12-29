@@ -1,4 +1,4 @@
-# KainThereYa 🌷
+# KainThereYa 🥘
 
 ### Project Description
 - A personal website project designed to serve as a local food finder and rating hub focusing on Karinderya and Paresan.
