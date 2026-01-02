@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <>
       <div>
-        Hello, World
+        Home Page Screen 
       </div>
     </>
   );

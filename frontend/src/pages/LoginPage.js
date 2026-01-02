@@ -8,7 +8,7 @@ function LoginPage() {
   return (
     <>
       <div>
-        Login Page
+        Login Page Screen
       </div>
     </>
   );
