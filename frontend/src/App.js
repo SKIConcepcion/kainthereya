@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
-import SignupPage from './pages/SignupPage';
 
 function App() {
   return (
@@ -11,10 +11,8 @@ function App() {
         <div className='pages'>
           <Routes>
 
-            < Route path="/" element={<LoginPage/>} />
-            < Route path="/signup" element={<SignupPage/>} />
-            < Route path="/home" element={<HomePage/>} />
-            
+            < Route path="/" element={<HomePage/>} />
+          
           </Routes>
         </div>
       </BrowserRouter>
