@@ -13,7 +13,7 @@ const app = express();
 // https://kainthereya.onrender.com/
 // http://localhost:4000
 app.use(cors({
-  origin: ['https://kainthereya.vercel.app/', 'http://localhost:3000'], 
+  origin: ['https://kainthereya.vercel.app/', 'http://localhost:5173'], 
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   allowedHeaders: ['Content-Type'],
 }));
