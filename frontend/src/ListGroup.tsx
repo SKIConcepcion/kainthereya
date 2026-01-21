@@ -1,7 +1,10 @@
 import { useState, type SetStateAction } from "react";
 
-function ListGroup() {
-    let players = ["LeBron James", "Victor Wemby", "Tyrese Haliburton"]
+interface Props {
+    players: string[];
+}
+
+function ListGroup({players}: Props) {
 
     const [selectedIndex, setSelectedIndex] = useState(-1);
     const handleBtnClick = (index: SetStateAction<number>) => {

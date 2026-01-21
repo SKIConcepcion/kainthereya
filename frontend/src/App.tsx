@@ -2,12 +2,12 @@ import ListGroup from "./ListGroup";
 import Message from "./Message";
 
 function App() {
-  const name = "Sean";
+  let players = ["LeBron James", "Victor Wemby", "Tyrese Haliburton"]
 
   return (
     <>
-      <Message />
-      <ListGroup />
+      <Message heading={"NBA Players"}/>
+      <ListGroup players={players}/>
     </>
   );
 }

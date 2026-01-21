@@ -1,7 +1,12 @@
-function Message() {
+
+interface Props {
+    heading: string;
+}
+
+function Message({heading}: Props) {
     return (
         <>
-            <h1> Theses are the greatest players of all time </h1>
+            <h1> {heading} </h1>
         </>
     );
 }
