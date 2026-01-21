@@ -4,10 +4,14 @@ import Message from "./Message";
 function App() {
   let players = ["LeBron James", "Victor Wemby", "Tyrese Haliburton"]
 
+  const handleBtnClick = (item: string) => {
+    console.log(item);
+  }
+
   return (
     <>
       <Message heading={"NBA Players"}/>
-      <ListGroup players={players}/>
+      <ListGroup players={players} onSelectItem={handleBtnClick}/>
     </>
   );
 }

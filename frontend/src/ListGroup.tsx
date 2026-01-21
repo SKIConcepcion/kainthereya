@@ -1,22 +1,15 @@
-import { useState, type SetStateAction } from "react";
-
 interface Props {
     players: string[];
+    onSelectItem: (item: string) => void;
 }
 
-function ListGroup({players}: Props) {
-
-    const [selectedIndex, setSelectedIndex] = useState(-1);
-    const handleBtnClick = (index: SetStateAction<number>) => {
-        console.log(index);
-        setSelectedIndex(index);
-    }
+function ListGroup({players, onSelectItem}: Props) {
 
     return (
         <>
             { players.length === 0 && <p> Na da </p>}
-            {players.map((player, index) => (
-                <li key={player} onClick={() => handleBtnClick(index)}> {player} </li>
+            {players.map((player) => (
+                <li key={player} onClick={() => onSelectItem(player)}> {player} </li>
             ))}
         </>
     );
