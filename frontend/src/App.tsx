@@ -1,17 +1,17 @@
-import ListGroup from "./ListGroup";
-import Message from "./Message";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import About from './pages/About'
 
 function App() {
-  let players = ["LeBron James", "Victor Wemby", "Tyrese Haliburton"]
-
-  const handleBtnClick = (item: string) => {
-    console.log(item);
-  }
-
   return (
     <>
-      <Message heading={"NBA Players"}/>
-      <ListGroup players={players} onSelectItem={handleBtnClick}/>
+      <BrowserRouter>
+          <Routes>
+            < Route path="/" element={<Home/>} />
+            < Route path="/about" element={<About/>} />
+          </Routes>
+      </BrowserRouter>
     </>
   );
 }
