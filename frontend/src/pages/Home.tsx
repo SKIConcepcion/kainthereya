@@ -17,11 +17,16 @@ const navigate = useNavigate();
   };
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <Message heading="NBA Players" />
       <ListGroup players={players} onSelectItem={handleBtnClick} />
-      <button onClick={() => {navigate(`/about`)}}> press me </button>
-    </>
+      <button
+        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        onClick={() => navigate("/about")}
+      >
+        press me
+      </button>
+    </div>
   );
 };
 
