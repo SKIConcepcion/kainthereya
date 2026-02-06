@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+body {
+    background-color: burlywood;
+}
+
+@theme {
+    --color-primary: #F54927;
+}
+
+@layer components {
+    .title {
+        @apply text-7xl
+    }
+}

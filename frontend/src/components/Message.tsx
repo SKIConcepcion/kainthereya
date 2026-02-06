@@ -10,7 +10,7 @@ function Message({heading}: Props) {
 
     return (
         <>
-            <h1 className="text-blue-500"> {heading} </h1>
+            <h1 className="title"> {heading} </h1>
 
             <button onClick={() => setCount(count + 1)}>
                 count is now {count}
